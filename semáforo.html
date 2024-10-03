@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificaSemaforo(cor) {
+    switch (cor.toLowerCase()) {
+        case 'verde':
+            console.log("A luz verde significa 'Siga em frente e fique atento com a velocidade'.");
+            break;
+        case 'amarelo':
+            console.log("A luz amarela significa 'Atenção fique atento'.");
+            break;
+        case 'vermelho':
+            console.log("A luz vermelha significa 'Pare o carro rapaz'.");
+            break;
+        default:
+            console.log("Essa cor não é válida para um semáforo.");
+    }
+}
+const corUsuario = prompt("Digite a cor do semáforo (verde, amarelo, vermelho): ");
+verificaSemaforo(corUsuario);
+    </script>
+</body>
+</html>
