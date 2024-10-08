@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificaVoto(idade) {
+    if (idade < 16) {
+        return "não vota";
+    } else if (idade >= 16 && idade < 18 || idade > 70) {
+        return "facultativo";
+    } else if (idade >= 18 && idade <= 70) {
+        return "obrigatório";
+    } else {
+        return "idade inválida";  
+    }
+}
+
+
+var idade = Number(prompt("Qual sua idade?"));
+
+
+console.log(verificaVoto(idade));
+
+
+    </script>
+</body>
+</html>
